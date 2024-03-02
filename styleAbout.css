@@ -1,0 +1,163 @@
+/*importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    /*display:flex;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*fondo */
+body{
+    background: url("Fondo.png");
+}
+/*head para hacer recuadro morado*/
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: #481971;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.flex {
+    align-items: center;
+}
+/*elementos contenidos*/
+.container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding:  0 20px;
+}
+/*separa los elementos unos de otros*/
+.navbar .menu-links{
+    display: flex; /*permite que los elementos no se pegen*/
+    gap: 40px;
+}
+
+/*da espacio entre los elementos del header*/
+.navbar{
+    justify-content: space-between;
+}
+
+/*elementos de la barra de navegacion*/
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.7s;
+}
+/*.elements {
+    display:flex;
+    align-items: center;
+}*/
+
+a.logo {
+    display: inline-block; /* Para permitir el ajuste del tamaño */
+    padding-left: 30px; /* Agrega espacio a la izquierda de la imagen para separarla del texto */
+    background-image: url('logo_1.png'); /* Especifica la ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: auto 100%; /* Ajusta el tamaño de la imagen automáticamente según la altura del texto */
+    text-decoration: none; 
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);/* Quita el subrayado predeterminado del enlace */
+    line-height: 24px;
+
+
+
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*quitar los puntos de la lista*/
+header ul li{
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+/*texto*/
+.parrafo h1{
+    
+    text-align: justify;
+    margin-top: 4em;
+    
+    
+}
+
+.primertexto h4 {
+    font-weight: normal;
+    text-shadow: none; /* Esta línea quita el efecto de negrita */
+}
+
+.segundotexto p {
+    
+    text-shadow: none; 
+}
+
+
+/*texto sección*/
+.elements .parrafo {
+    color: #481971;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/*modificando boton*/
+button {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    margin-left: 30em;
+    color:#fff;
+    padding: 20px;
+    background-image: linear-gradient(to right, #481971, #6a5acd);
+    border-radius: 5px;
+    border: none;
+    
+    
+}
+
+.img-01{
+    
+    height: 30em;
+    margin-left:10em;
+    border-radius: 0;
+    margin-top:5em;
+    
+}
+
+.rectangulo2 {
+    width: 1170px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute; /* Posicionamiento absoluto */
+    top: 8%; /* Posición vertical */
+    left: 50%; /* Posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el rectángulo */
+}
+
+.pie{
+    background-color: black;
+    color: #fff;
+    width: 1470px;
+    height: 50px;
+    position:absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 100%;/* Lo coloca en la mitad superior del rectángulo */
+    left:50%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 12px;
+    font-weight: normal;
+
+    
+}

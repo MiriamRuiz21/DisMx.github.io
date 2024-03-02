@@ -1,0 +1,209 @@
+/*importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    /*display:flex;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/*fondo */
+body{
+    background: url("Fondo.png");
+    
+}
+/*head para hacer recuadro morado*/
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: #481971;
+    
+}
+
+.flex {
+    align-items: center;
+    
+}
+/*elementos contenidos*/
+.container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding:  0 20px;
+}
+/*separa los elementos unos de otros*/
+.navbar .menu-links{
+    display: flex; 
+    gap: 40px;
+}
+
+/*da espacio entre los elementos del header*/
+.navbar{
+    justify-content: space-between;
+}
+
+/*elementos de la barra de navegacion*/
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.7s;
+}
+
+
+
+a.logo {
+    display: inline-block; /* Para permitir el ajuste del tamaño */
+    padding-left: 30px; /* Agrega espacio a la izquierda de la imagen para separarla del texto */
+    background-image: url('logo_1.png'); /* Especifica la ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: auto 100%; /* Ajusta el tamaño de la imagen automáticamente según la altura del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado del enlace */
+    line-height: 24px;
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*quitar los puntos de la lista*/
+header ul li{
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    color: #481971;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 68%; /* Lo coloca en la mitad superior del rectángulo */
+    left:25%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 18px;
+}
+
+
+/*modificando boton*/
+button h3 a {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 80%;
+    left:19%;
+    color:#fff;
+    padding: 20px;
+    background-image: linear-gradient(to right, #481971, #6a5acd);
+    border-radius: 25px;
+    text-decoration:none;
+    border: none;
+    transition: 0.2s;
+    
+    
+}
+
+button h3 a:hover{
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #481971;
+}
+
+
+/*linea blancao*/
+.rectangulo2 {
+    width: 1170px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute; 
+    top: 8%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.Images{
+    margin-top: 50px;
+}
+
+/* icono de correo */
+.Images .Port_1 {
+    
+    left: 40em; 
+    position: absolute; 
+    width: 16%; 
+    height: 21%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.Images .Port_2 {
+    
+    left: 57em; 
+    position: absolute;
+    width: 16%; 
+    height: 21%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.Images .Port_3 {
+    
+    left: 74em;
+    position: absolute;
+    width: 16%;
+    height: 21%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+/*TEXTO*/
+.parrafos .parr_1 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 85%; /* Lo coloca en la mitad superior del rectángulo */
+    left:51%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.parrafos .parr_2 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 85%; /* Lo coloca en la mitad superior del rectángulo */
+    left:69%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.parrafos .parr_3 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 85%; /* Lo coloca en la mitad superior del rectángulo */
+    left:88%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-weight: normal;
+    font-size: 15px;
+}
+.pie{
+    background-color: black;
+    color: #fff;
+    width: 1470px;
+    height: 50px;
+    position:absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 100%;/* Lo coloca en la mitad superior del rectángulo */
+    left:50%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 12px;
+    font-weight: normal;
+
+    
+}

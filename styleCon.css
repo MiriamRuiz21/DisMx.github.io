@@ -1,0 +1,275 @@
+/*importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    /*display:flex;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/*fondo */
+body{
+    background: url("Fondo.png");
+    
+}
+/*head para hacer recuadro morado*/
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: #481971;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.flex {
+    align-items: center;
+    
+}
+/*elementos contenidos*/
+.container{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding:  0 20px;
+}
+/*separa los elementos unos de otros*/
+.navbar .menu-links{
+    display: flex; /*permite que los elementos no se pegen*/
+    gap: 40px;
+}
+
+/*da espacio entre los elementos del header*/
+.navbar{
+    justify-content: space-between;
+}
+
+/*elementos de la barra de navegacion*/
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.7s;
+}
+/*.elements {
+    display:flex;
+    align-items: center;
+}*/
+
+a.logo {
+    display: inline-block; /* Para permitir el ajuste del tamaño */
+    padding-left: 30px; /* Agrega espacio a la izquierda de la imagen para separarla del texto */
+    background-image: url('logo_1.png'); /* Especifica la ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: auto 100%; /* Ajusta el tamaño de la imagen automáticamente según la altura del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado del enlace */
+    line-height: 24px;
+
+
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*quitar los puntos de la lista*/
+header ul li{
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conctactanos{
+    display: flex;
+    margin-top: 1em;
+    font-size: 40px;
+    color: #481971;
+    margin-left: 5em;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-right: auto;
+}
+
+.titulo1 {
+    margin-left: 12.5em;
+    color: #481971;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.rectangulo {
+    margin-top: 4em;
+    margin-left: 16em;
+    width: 350px; /* Anchura del rectángulo */
+    height: 250px; /* Altura del rectángulo */
+    background-color: #EAEAEA; /* Color de fondo del rectángulo (rojo en este caso) */
+    border: 2px solid #EAEAEA; /* Borde del rectángulo (opcional) */
+    border-radius: 30px;
+    position: relative; /* Establece el contexto de posicionamiento para los elementos internos */
+}
+
+.rectangulo p {
+    color: #481971;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 15%; /* Lo coloca en la mitad superior del rectángulo */
+    left: 50%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 22px; 
+    font-weight: bold;/* Tamaño de la fuente del texto */
+}
+
+.icono {
+    position: absolute;
+    top: 120px; /* Ajusta la posición vertical de la imagen */
+    left: 70px; /* Ajusta la posición horizontal de la imagen */
+    width: 65px; /* Ajusta el ancho de la imagen */
+    height: 65px; /* Ajusta la altura de la imagen */
+}
+
+.icono2 {
+    position: absolute;
+    top: 120px; /* Ajusta la posición vertical de la imagen */
+    left: 220px; /* Ajusta la posición horizontal de la imagen */
+    width: 65px; /* Ajusta el ancho de la imagen */
+    height: 65px; /* Ajusta la altura de la imagen */
+}
+
+.linea1 {
+    position: absolute;
+    top: 70px; /* Ajusta la posición vertical de la imagen */
+    left: 70px; /* Ajusta la posición horizontal de la imagen */
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: 15px; /* Ajusta la altura de la imagen */
+}
+.rectangulo1 {
+    width: 600px;
+    height: 500px;
+    background-color: none;
+    position: absolute; /* Posicionamiento absoluto */
+    top: 54%; /* Posición vertical */
+    left: 70%; /* Posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el rectángulo */
+}
+
+.rectangulo1 .texto12 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 10%; /* Lo coloca en la mitad superior del rectángulo */
+    left:60%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.rectangulo1 .texto13 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 38%; /* Lo coloca en la mitad superior del rectángulo */
+    left:61%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-weight: normal;/* Tamaño de la fuente del texto */
+    font-size: 18px;
+}
+
+.rectangulo1 .texto14 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 62%; /* Lo coloca en la mitad superior del rectángulo */
+    left:50%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-weight: normal;/* Tamaño de la fuente del texto */
+    font-size: 18px;
+}
+
+.rectangulo1 .texto15 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 86%; /* Lo coloca en la mitad superior del rectángulo */
+    left:68%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-weight: normal;/* Tamaño de la fuente del texto */
+    font-size: 18px;
+}
+
+.rectangulo1 .texto16 {
+    color: #000;
+    position: absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 95%; /* Lo coloca en la mitad superior del rectángulo */
+    left:58%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-weight: normal;/* Tamaño de la fuente del texto */
+    font-size: 18px;
+}
+
+.rectangulo1 .icono11 {
+    position: absolute;
+    top: 15px; /* Ajusta la posición vertical de la imagen */
+    left: 140px; /* Ajusta la posición horizontal de la imagen */
+    width: 65px; /* Ajusta el ancho de la imagen */
+    height: 65px; /* Ajusta la altura de la imagen */
+}
+
+/* icono de ccalendario */
+.rectangulo1 .icono12 {
+    position: absolute;
+    top: 160px; /* Ajusta la posición vertical de la imagen */
+    left: 140px; /* Ajusta la posición horizontal de la imagen */
+    width: 65px; /* Ajusta el ancho de la imagen */
+    height: 65px; /* Ajusta la altura de la imagen */
+}
+
+/* icono de telefono */
+.rectangulo1 .icono13 {
+    position: absolute;
+    top: 280px; /* Ajusta la posición vertical de la imagen */
+    left: 140px; /* Ajusta la posición horizontal de la imagen */
+    width: 65px; /* Ajusta el ancho de la imagen */
+    height: 65px; /* Ajusta la altura de la imagen */
+}
+
+/* icono de correo */
+.rectangulo1 .icono14 {
+    position: absolute;
+    top: 420px; /* Ajusta la posición vertical de la imagen */
+    left: 140px; /* Ajusta la posición horizontal de la imagen */
+    width: 65px; /* Ajusta el ancho de la imagen */
+    height: 65px; /* Ajusta la altura de la imagen */
+}
+
+.rectangulo2 {
+    width: 1170px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute; /* Posicionamiento absoluto */
+    top: 8%; /* Posición vertical */
+    left: 50%; /* Posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el rectángulo */
+}
+
+.pie{
+    background-color: black;
+    color: #fff;
+    width: 1470px;
+    height: 50px;
+    position:absolute; /* Permite posicionar el texto con respecto al rectángulo */
+    top: 100%;/* Lo coloca en la mitad superior del rectángulo */
+    left:50%; /* Lo coloca en el centro horizontal del rectángulo */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    font-size: 12px;
+    font-weight: normal;
+
+    
+}
