@@ -759,23 +759,36 @@ footer a{
   padding-top: 30px;
 }
 
-#prodetails .single-pro-details h4{
+#prodetails .single-pro-details h1{
   padding: 40px 0 20px 0;
+  color: #481971;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#prodetails .single-pro-details h2{
+#prodetails .single-pro-details h4{
+  
   font-size: 26px;
 }
 
-#prodetails .single-pro-details button{
-  background: #481971;
-  color: #fff;
-}
-
 #prodetails .single-pro-details span{
+  padding: 40px 0 20px 0;
   line-height: 30px;
   text-align: justify;
 }
+
+#prodetails .single-pro-details h3{
+  padding: 40px 0 20px 0;
+  }
+
+
+
+
+#prodetails .single-pro-details button{
+  background: linear-gradient(to right, #481971, #6a5acd);
+  color: #fff;
+}
+
+
 
 
 /* producto simple */
