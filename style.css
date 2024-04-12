@@ -127,11 +127,12 @@ nav .wrapper{
     background-position: 50px 20px;
 }
 
-.wrapper .logo a{
-    color:481971;
-    text-decoration: none;
-    font-size: 27px;
-    font-weight: 600;
+.wrapper .logo img{
+  position: relative;
+  top:10px;
+  left: 20%;
+  width: 16%;
+  height: 16%;
 }
 
 .wrapper .nav-links{
@@ -240,7 +241,6 @@ header .abajo{
 header.abajo .logo,
 header.abajo ul li a{
     color: #fff;
-    
 }
 
 /* EL SLIDER */
@@ -391,7 +391,6 @@ header.abajo ul li a{
 
 .card .info p{
   color: #fff;
-
   letter-spacing: 3px;
   font-size: 15px;
   margin-top: 8px;
@@ -580,6 +579,12 @@ header.abajo ul li a{
   padding-bottom: 15px;
 }
 
+#sm-banner i{
+  
+  font-size: 35px;
+  color: #fff;
+}
+
 #sm-banner .banner-box:hover button{
   background: #481971;
   border: 1px solid #481971;
@@ -623,12 +628,37 @@ header.abajo ul li a{
 }
 
 #banner3 h3{
-  color: #481971;
+  color: #fff;
   font-weight: 800;
   font-size: 15px;
 }
 
 /* PARTE DE OTRAS PÁGINAS */
+
+/* about */
+
+#about-head{
+  display: flex;
+  align-items: center;
+}
+
+#about-head img{
+  width: 60%;
+  padding-left: 100px;
+  height: auto;
+  
+}
+
+#about-head div h2{
+  color: #481971;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#about-head div{
+  padding-left: 80px;
+  text-align: justify;
+  line-height: 1.79;
+}
 
 /* FOOTER */
 
@@ -802,14 +832,15 @@ footer a{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  left: 80px;
   
 }
 
 #contact-details .details{
-  width:40%;
+  width:45%;
   background-color: rgba(241, 241, 241, 0.3);
   border: 1px solid #f1f1f1;
-  padding: 35px;
+  padding: 54.90px;
 }
 
 #contact-details .details span{
